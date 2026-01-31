@@ -1,7 +1,11 @@
+import { Outlet } from "react-router-dom";
+import Header from "./Components/Header";
+
 function App() {
   return (
     <>
-      <h2 className="text-amber-500">hiiiii</h2>
+      <Header />
+      <Outlet />
     </>
   );
 }
