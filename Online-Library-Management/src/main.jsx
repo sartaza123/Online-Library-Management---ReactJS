@@ -23,6 +23,10 @@ const appRouter = createBrowserRouter([
         element: <BrowseBook />,
       },
       {
+        path: "/browse/:category",
+        element: <BrowseBook />,
+      },
+      {
         path: "/add",
         element: <AddBook />,
       },
