@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Error from "./Components/Error.jsx";
 import BrowseBook from "./Components/BrowseBook.jsx";
 import AddBook from "./Components/AddBooks.jsx";
+import Home from "./Components/Home.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const appRouter = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/browse",
         element: <BrowseBook />,
