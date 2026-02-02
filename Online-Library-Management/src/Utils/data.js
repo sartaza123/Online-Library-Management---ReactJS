@@ -3,6 +3,7 @@ const books = [
     id: 1,
     category: "philosophical",
     title: "Pride and Prejudice",
+    author: "Jane Austen",
     launchDate: "1813-01-28",
     pages: 432,
     coverImage:
@@ -14,6 +15,7 @@ const books = [
     id: 2,
     category: "fantasy",
     title: "The Hobbit",
+    author: "J. R. R. Tolkien",
     launchDate: "1937-09-21",
     pages: 310,
     coverImage:
@@ -25,6 +27,7 @@ const books = [
     id: 3,
     category: "sci-fi",
     title: "1984",
+    author: "George Orwell",
     launchDate: "1949-06-08",
     pages: 328,
     coverImage:
@@ -36,6 +39,7 @@ const books = [
     id: 4,
     category: "philosophical",
     title: "The Alchemist",
+    author: "Paulo Coelho",
     launchDate: "1988-01-01",
     pages: 208,
     coverImage:
@@ -47,6 +51,7 @@ const books = [
     id: 5,
     category: "history",
     title: "War and Peace",
+    author: "Leo Tolstoy",
     launchDate: "1869-01-01",
     pages: 1225,
     coverImage:
@@ -54,11 +59,11 @@ const books = [
     description:
       "Leo Tolstoy’s epic novel depicting Russian society during the Napoleonic Wars.",
   },
-
   {
     id: 6,
     category: "philosophical",
     title: "The Adventures of Sherlock Holmes",
+    author: "Arthur Conan Doyle",
     launchDate: "1892-10-14",
     pages: 307,
     coverImage:
@@ -70,6 +75,7 @@ const books = [
     id: 7,
     category: "philosophical",
     title: "Jane Eyre",
+    author: "Charlotte Brontë",
     launchDate: "1847-10-16",
     pages: 500,
     coverImage:
@@ -81,6 +87,7 @@ const books = [
     id: 8,
     category: "fantasy",
     title: "Harry Potter and the Philosopher’s Stone",
+    author: "J. K. Rowling",
     launchDate: "1997-06-26",
     pages: 223,
     coverImage:
@@ -92,6 +99,7 @@ const books = [
     id: 9,
     category: "sci-fi",
     title: "Dune",
+    author: "Frank Herbert",
     launchDate: "1965-08-01",
     pages: 412,
     coverImage:
@@ -103,6 +111,7 @@ const books = [
     id: 10,
     category: "history",
     title: "To Kill a Mockingbird",
+    author: "Harper Lee",
     launchDate: "1960-07-11",
     pages: 281,
     coverImage:
@@ -115,6 +124,7 @@ const books = [
     id: 11,
     category: "philosophical",
     title: "Moby-Dick",
+    author: "Herman Melville",
     launchDate: "1851-10-18",
     pages: 635,
     coverImage:
@@ -126,6 +136,7 @@ const books = [
     id: 12,
     category: "fantasy",
     title: "The Fellowship of the Ring",
+    author: "J. R. R. Tolkien",
     launchDate: "1954-07-29",
     pages: 423,
     coverImage:
@@ -137,6 +148,7 @@ const books = [
     id: 13,
     category: "sci-fi",
     title: "Fahrenheit 451",
+    author: "Ray Bradbury",
     launchDate: "1953-10-19",
     pages: 249,
     coverImage:
@@ -148,6 +160,7 @@ const books = [
     id: 14,
     category: "fantasy",
     title: "Dracula",
+    author: "Bram Stoker",
     launchDate: "1897-05-26",
     pages: 418,
     coverImage:
@@ -159,6 +172,7 @@ const books = [
     id: 15,
     category: "philosophical",
     title: "Great Expectations",
+    author: "Charles Dickens",
     launchDate: "1861-08-01",
     pages: 505,
     coverImage:
@@ -171,6 +185,7 @@ const books = [
     id: 16,
     category: "philosophical",
     title: "The Republic",
+    author: "Plato",
     launchDate: "0380-01-01",
     pages: 416,
     coverImage:
@@ -182,6 +197,7 @@ const books = [
     id: 17,
     category: "history",
     title: "The Diary of a Young Girl",
+    author: "Anne Frank",
     launchDate: "1947-06-25",
     pages: 283,
     coverImage:
@@ -193,6 +209,7 @@ const books = [
     id: 18,
     category: "fantasy",
     title: "Treasure Island",
+    author: "Robert Louis Stevenson",
     launchDate: "1883-11-14",
     pages: 292,
     coverImage:
@@ -203,6 +220,7 @@ const books = [
     id: 19,
     category: "sci-fi",
     title: "A Brief History of Time",
+    author: "Stephen Hawking",
     launchDate: "1988-04-01",
     pages: 256,
     coverImage:
@@ -213,6 +231,7 @@ const books = [
     id: 20,
     category: "history",
     title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
     launchDate: "1925-04-10",
     pages: 218,
     coverImage:
@@ -225,6 +244,7 @@ const books = [
     id: 21,
     category: "philosophical",
     title: "Crime and Punishment",
+    author: "Fyodor Dostoevsky",
     launchDate: "1866-01-01",
     pages: 671,
     coverImage:
@@ -236,6 +256,7 @@ const books = [
     id: 22,
     category: "history",
     title: "Don Quixote",
+    author: "Miguel de Cervantes",
     launchDate: "1605-01-16",
     pages: 863,
     coverImage:
@@ -247,6 +268,7 @@ const books = [
     id: 23,
     category: "history",
     title: "Les Misérables",
+    author: "Victor Hugo",
     launchDate: "1862-01-01",
     pages: 1463,
     coverImage:
@@ -257,6 +279,7 @@ const books = [
     id: 24,
     category: "philosophical",
     title: "The Catcher in the Rye",
+    author: "J. D. Salinger",
     launchDate: "1951-07-16",
     pages: 277,
     coverImage:
@@ -268,6 +291,7 @@ const books = [
     id: 25,
     category: "history",
     title: "Animal Farm",
+    author: "George Orwell",
     launchDate: "1945-08-17",
     pages: 112,
     coverImage:
@@ -280,6 +304,7 @@ const books = [
     id: 26,
     category: "sci-fi",
     title: "Brave New World",
+    author: "Aldous Huxley",
     launchDate: "1932-01-01",
     pages: 311,
     coverImage:
@@ -290,6 +315,7 @@ const books = [
     id: 27,
     category: "poetry",
     title: "The Odyssey",
+    author: "Homer",
     launchDate: "0800-01-01",
     pages: 541,
     coverImage:
@@ -300,6 +326,7 @@ const books = [
     id: 28,
     category: "poetry",
     title: "The Iliad",
+    author: "Homer",
     launchDate: "0750-01-01",
     pages: 683,
     coverImage:
@@ -310,6 +337,7 @@ const books = [
     id: 29,
     category: "philosophical",
     title: "Wuthering Heights",
+    author: "Emily Brontë",
     launchDate: "1847-12-01",
     pages: 416,
     coverImage:
@@ -320,6 +348,7 @@ const books = [
     id: 30,
     category: "fantasy",
     title: "Frankenstein",
+    author: "Mary Shelley",
     launchDate: "1818-01-01",
     pages: 280,
     coverImage:
@@ -332,6 +361,7 @@ const books = [
     id: 31,
     category: "history",
     title: "The Kite Runner",
+    author: "Khaled Hosseini",
     launchDate: "2003-05-29",
     pages: 371,
     coverImage:
@@ -343,6 +373,7 @@ const books = [
     id: 32,
     category: "history",
     title: "The Book Thief",
+    author: "Markus Zusak",
     launchDate: "2005-03-14",
     pages: 552,
     coverImage:
@@ -353,6 +384,7 @@ const books = [
     id: 33,
     category: "history",
     title: "Sapiens",
+    author: "Yuval Noah Harari",
     launchDate: "2011-01-01",
     pages: 443,
     coverImage:
@@ -363,6 +395,7 @@ const books = [
     id: 34,
     category: "philosophical",
     title: "Atomic Habits",
+    author: "James Clear",
     launchDate: "2018-10-16",
     pages: 320,
     coverImage:
@@ -373,6 +406,7 @@ const books = [
     id: 35,
     category: "history",
     title: "Rich Dad Poor Dad",
+    author: "Robert Kiyosaki",
     launchDate: "1997-01-01",
     pages: 336,
     coverImage:
@@ -384,6 +418,7 @@ const books = [
     id: 36,
     category: "philosophical",
     title: "Think and Grow Rich",
+    author: "Napoleon Hill",
     launchDate: "1937-01-01",
     pages: 238,
     coverImage:
@@ -394,6 +429,7 @@ const books = [
     id: 37,
     category: "philosophical",
     title: "The Power of Habit",
+    author: "Charles Duhigg",
     launchDate: "2012-02-28",
     pages: 371,
     coverImage:
@@ -404,6 +440,7 @@ const books = [
     id: 38,
     category: "philosophical",
     title: "The Psychology of Money",
+    author: "Morgan Housel",
     launchDate: "2020-09-08",
     pages: 256,
     coverImage:
@@ -414,6 +451,7 @@ const books = [
     id: 39,
     category: "philosophical",
     title: "Ikigai",
+    author: "Héctor García",
     launchDate: "2016-01-01",
     pages: 208,
     coverImage:
@@ -424,6 +462,7 @@ const books = [
     id: 40,
     category: "philosophical",
     title: "The Subtle Art of Not Giving a F*ck",
+    author: "Mark Manson",
     launchDate: "2016-09-13",
     pages: 224,
     coverImage:
@@ -435,6 +474,7 @@ const books = [
     id: 41,
     category: "philosophical",
     title: "The Old Man and the Sea",
+    author: "Ernest Hemingway",
     launchDate: "1952-09-01",
     pages: 127,
     coverImage:
@@ -445,6 +485,7 @@ const books = [
     id: 42,
     category: "philosophical",
     title: "The Picture of Dorian Gray",
+    author: "Oscar Wilde",
     launchDate: "1890-06-20",
     pages: 254,
     coverImage:
@@ -455,6 +496,7 @@ const books = [
     id: 43,
     category: "philosophical",
     title: "The Brothers Karamazov",
+    author: "Fyodor Dostoevsky",
     launchDate: "1880-01-01",
     pages: 824,
     coverImage:
@@ -465,6 +507,7 @@ const books = [
     id: 44,
     category: "fantasy",
     title: "The Chronicles of Narnia",
+    author: "C. S. Lewis",
     launchDate: "1950-10-16",
     pages: 767,
     coverImage:
@@ -475,6 +518,7 @@ const books = [
     id: 45,
     category: "fantasy",
     title: "Journey to the Center of the Earth",
+    author: "Jules Verne",
     launchDate: "1864-11-25",
     pages: 183,
     coverImage:
@@ -486,6 +530,7 @@ const books = [
     id: 46,
     category: "sci-fi",
     title: "The Time Machine",
+    author: "H. G. Wells",
     launchDate: "1895-05-07",
     pages: 118,
     coverImage:
@@ -496,6 +541,7 @@ const books = [
     id: 47,
     category: "history",
     title: "Anna Karenina",
+    author: "Leo Tolstoy",
     launchDate: "1877-01-01",
     pages: 864,
     coverImage:
@@ -506,6 +552,7 @@ const books = [
     id: 48,
     category: "history",
     title: "The Communist Manifesto",
+    author: "Karl Marx & Friedrich Engels",
     launchDate: "1848-02-21",
     pages: 80,
     coverImage:
@@ -513,4 +560,5 @@ const books = [
     description: "Karl Marx and Friedrich Engels’ political work.",
   },
 ];
+
 export default books;

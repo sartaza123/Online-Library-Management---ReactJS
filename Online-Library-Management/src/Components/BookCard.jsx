@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function BookCard({ book }) {
   //   console.log(book[1]);
   return (
@@ -12,9 +14,14 @@ function BookCard({ book }) {
         </div>
         <div className="p-2">
           <h3 className="font-bold">{book.title}</h3>
+          <p className="text-sm">
+            <strong>Author </strong>: {book.author}
+          </p>
           <p className="text-sm">Category : {book.category}</p>
           <p className="text-sm">Launch Date : {book.launchDate}</p>
-          <p className="text-sm">Pages : {book.pages}</p>
+          <NavLink to={`/details/${book.id}`}>
+            <p className="underline">More Details → </p>
+          </NavLink>
         </div>
       </div>
     </>
