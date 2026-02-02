@@ -2,12 +2,12 @@ function BookCard({ book }) {
   //   console.log(book[1]);
   return (
     <>
-      <div className="w-50 rounded-md m-10 shadow-2xl">
+      <div className="w-50 rounded-md m-10 shadow-2xl hover:scale-105 p-1 hover:bg-green-900 hover:text-white transition-all">
         <div className="image object-cover">
           <img
             src={book.coverImage}
             alt="Image not available"
-            className="w-full h-56 rounded-sm"
+            className="w-full h-56 rounded-sm bg-white"
           />
         </div>
         <div className="p-2">

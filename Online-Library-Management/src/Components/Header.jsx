@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   const navLinkClass = ({ isActive }) =>
-    `px-4 py-2 rounded-md text-sm font-medium transition-all
+    `px-4 py-2 rounded-md text-sm font-medium transition-all text-white
      ${
        isActive
          ? "border text-green-900"
@@ -10,10 +10,10 @@ function Header() {
      }`;
 
   return (
-    <header className="w-full bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header className="w-full bg-green-900 shadow-md fixed top-0 z-99">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between border items-center">
         {/* Logo / Title */}
-        <h1 className="text-xl font-bold text-green-900">BookStore</h1>
+        <h1 className="text-xl font-bold text-white">My-Library</h1>
 
         {/* Navigation */}
         <nav className="flex gap-3">

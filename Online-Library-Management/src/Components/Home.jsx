@@ -4,7 +4,7 @@ import books from "../Utils/data";
 function Home() {
   return (
     <>
-      <div className="m-5">
+      <div className="m-5 mt-24">
         <h1 className="text-2xl font-bold">Hello Readers.</h1>
         <p>
           Welcome to your digital Library. Browse books by category, explore

@@ -11,10 +11,10 @@ function BrowseBook() {
       ? books
       : books.filter((book) => book.category === category);
   return (
-    <>
+    <div className="mt-24">
       <Category />
       <BookList books={filteredBooks} />
-    </>
+    </div>
   );
 }
 export default BrowseBook;

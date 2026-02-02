@@ -11,7 +11,7 @@ function Category() {
           return (
             <li
               key={cate}
-              className="mr-10 capitalize text-xl hover:text-green-800"
+              className="mr-10 capitalize text-xl hover:text-green-800 hover:scale-105 transition-all"
             >
               <NavLink
                 to={cate === "all" ? "/browse" : `/browse/${cate}`}
