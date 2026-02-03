@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Error from "./Components/Error.jsx";
 import BrowseBook from "./Components/BrowseBook.jsx";
-import AddBook from "./Components/AddBooks.jsx";
+import AddBook from "./Components/AddBook.jsx";
 import Home from "./Components/Home.jsx";
 import BookDetails from "./Components/BookDetails.jsx";
 
