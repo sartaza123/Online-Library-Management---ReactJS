@@ -4,6 +4,7 @@ const books = [
     category: "philosophical",
     title: "Pride and Prejudice",
     author: "Jane Austen",
+    rating: 4.7,
     launchDate: "1813-01-28",
     pages: 432,
     coverImage:
@@ -16,6 +17,7 @@ const books = [
     category: "fantasy",
     title: "The Hobbit",
     author: "J. R. R. Tolkien",
+    rating: 4.8,
     launchDate: "1937-09-21",
     pages: 310,
     coverImage:
@@ -28,6 +30,7 @@ const books = [
     category: "sci-fi",
     title: "1984",
     author: "George Orwell",
+    rating: 4.9,
     launchDate: "1949-06-08",
     pages: 328,
     coverImage:
@@ -40,6 +43,7 @@ const books = [
     category: "philosophical",
     title: "The Alchemist",
     author: "Paulo Coelho",
+    rating: 4.3,
     launchDate: "1988-01-01",
     pages: 208,
     coverImage:
@@ -52,6 +56,7 @@ const books = [
     category: "history",
     title: "War and Peace",
     author: "Leo Tolstoy",
+    rating: 4.6,
     launchDate: "1869-01-01",
     pages: 1225,
     coverImage:
@@ -64,6 +69,7 @@ const books = [
     category: "philosophical",
     title: "The Adventures of Sherlock Holmes",
     author: "Arthur Conan Doyle",
+    rating: 4.5,
     launchDate: "1892-10-14",
     pages: 307,
     coverImage:
@@ -76,6 +82,7 @@ const books = [
     category: "philosophical",
     title: "Jane Eyre",
     author: "Charlotte Brontë",
+    rating: 4.6,
     launchDate: "1847-10-16",
     pages: 500,
     coverImage:
@@ -88,6 +95,7 @@ const books = [
     category: "fantasy",
     title: "Harry Potter and the Philosopher’s Stone",
     author: "J. K. Rowling",
+    rating: 4.8,
     launchDate: "1997-06-26",
     pages: 223,
     coverImage:
@@ -100,6 +108,7 @@ const books = [
     category: "sci-fi",
     title: "Dune",
     author: "Frank Herbert",
+    rating: 4.7,
     launchDate: "1965-08-01",
     pages: 412,
     coverImage:
@@ -112,6 +121,7 @@ const books = [
     category: "history",
     title: "To Kill a Mockingbird",
     author: "Harper Lee",
+    rating: 4.8,
     launchDate: "1960-07-11",
     pages: 281,
     coverImage:
@@ -119,12 +129,12 @@ const books = [
     description:
       "Harper Lee’s novel addressing racial injustice in the American South.",
   },
-
   {
     id: 11,
     category: "philosophical",
     title: "Moby-Dick",
     author: "Herman Melville",
+    rating: 4.2,
     launchDate: "1851-10-18",
     pages: 635,
     coverImage:
@@ -137,6 +147,7 @@ const books = [
     category: "fantasy",
     title: "The Fellowship of the Ring",
     author: "J. R. R. Tolkien",
+    rating: 4.9,
     launchDate: "1954-07-29",
     pages: 423,
     coverImage:
@@ -149,6 +160,7 @@ const books = [
     category: "sci-fi",
     title: "Fahrenheit 451",
     author: "Ray Bradbury",
+    rating: 4.4,
     launchDate: "1953-10-19",
     pages: 249,
     coverImage:
@@ -161,6 +173,7 @@ const books = [
     category: "fantasy",
     title: "Dracula",
     author: "Bram Stoker",
+    rating: 4.3,
     launchDate: "1897-05-26",
     pages: 418,
     coverImage:
@@ -173,6 +186,7 @@ const books = [
     category: "philosophical",
     title: "Great Expectations",
     author: "Charles Dickens",
+    rating: 4.5,
     launchDate: "1861-08-01",
     pages: 505,
     coverImage:
@@ -180,12 +194,12 @@ const books = [
     description:
       "Charles Dickens’ novel of personal growth, ambition, and morality.",
   },
-
   {
     id: 16,
     category: "philosophical",
     title: "The Republic",
     author: "Plato",
+    rating: 4.4,
     launchDate: "0380-01-01",
     pages: 416,
     coverImage:
@@ -198,6 +212,7 @@ const books = [
     category: "history",
     title: "The Diary of a Young Girl",
     author: "Anne Frank",
+    rating: 4.9,
     launchDate: "1947-06-25",
     pages: 283,
     coverImage:
@@ -210,6 +225,7 @@ const books = [
     category: "fantasy",
     title: "Treasure Island",
     author: "Robert Louis Stevenson",
+    rating: 4.1,
     launchDate: "1883-11-14",
     pages: 292,
     coverImage:
@@ -221,6 +237,7 @@ const books = [
     category: "sci-fi",
     title: "A Brief History of Time",
     author: "Stephen Hawking",
+    rating: 4.6,
     launchDate: "1988-04-01",
     pages: 256,
     coverImage:
@@ -232,6 +249,7 @@ const books = [
     category: "history",
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
+    rating: 4.4,
     launchDate: "1925-04-10",
     pages: 218,
     coverImage:
@@ -239,12 +257,12 @@ const books = [
     description:
       "A critique of wealth, love, and the American Dream by F. Scott Fitzgerald.",
   },
-
   {
     id: 21,
     category: "philosophical",
     title: "Crime and Punishment",
     author: "Fyodor Dostoevsky",
+    rating: 4.8,
     launchDate: "1866-01-01",
     pages: 671,
     coverImage:
@@ -257,6 +275,7 @@ const books = [
     category: "history",
     title: "Don Quixote",
     author: "Miguel de Cervantes",
+    rating: 4.3,
     launchDate: "1605-01-16",
     pages: 863,
     coverImage:
@@ -269,6 +288,7 @@ const books = [
     category: "history",
     title: "Les Misérables",
     author: "Victor Hugo",
+    rating: 4.7,
     launchDate: "1862-01-01",
     pages: 1463,
     coverImage:
@@ -280,6 +300,7 @@ const books = [
     category: "philosophical",
     title: "The Catcher in the Rye",
     author: "J. D. Salinger",
+    rating: 4.0,
     launchDate: "1951-07-16",
     pages: 277,
     coverImage:
@@ -292,6 +313,7 @@ const books = [
     category: "history",
     title: "Animal Farm",
     author: "George Orwell",
+    rating: 4.6,
     launchDate: "1945-08-17",
     pages: 112,
     coverImage:
@@ -299,12 +321,12 @@ const books = [
     description:
       "George Orwell’s political allegory critiquing totalitarianism.",
   },
-
   {
     id: 26,
     category: "sci-fi",
     title: "Brave New World",
     author: "Aldous Huxley",
+    rating: 4.4,
     launchDate: "1932-01-01",
     pages: 311,
     coverImage:
@@ -316,6 +338,7 @@ const books = [
     category: "poetry",
     title: "The Odyssey",
     author: "Homer",
+    rating: 4.5,
     launchDate: "0800-01-01",
     pages: 541,
     coverImage:
@@ -327,6 +350,7 @@ const books = [
     category: "poetry",
     title: "The Iliad",
     author: "Homer",
+    rating: 4.4,
     launchDate: "0750-01-01",
     pages: 683,
     coverImage:
@@ -338,6 +362,7 @@ const books = [
     category: "philosophical",
     title: "Wuthering Heights",
     author: "Emily Brontë",
+    rating: 4.3,
     launchDate: "1847-12-01",
     pages: 416,
     coverImage:
@@ -349,6 +374,7 @@ const books = [
     category: "fantasy",
     title: "Frankenstein",
     author: "Mary Shelley",
+    rating: 4.4,
     launchDate: "1818-01-01",
     pages: 280,
     coverImage:
@@ -356,12 +382,12 @@ const books = [
     description:
       "Mary Shelley’s novel about creation, science, and responsibility.",
   },
-
   {
     id: 31,
     category: "history",
     title: "The Kite Runner",
     author: "Khaled Hosseini",
+    rating: 4.6,
     launchDate: "2003-05-29",
     pages: 371,
     coverImage:
@@ -374,6 +400,7 @@ const books = [
     category: "history",
     title: "The Book Thief",
     author: "Markus Zusak",
+    rating: 4.7,
     launchDate: "2005-03-14",
     pages: 552,
     coverImage:
@@ -385,6 +412,7 @@ const books = [
     category: "history",
     title: "Sapiens",
     author: "Yuval Noah Harari",
+    rating: 4.6,
     launchDate: "2011-01-01",
     pages: 443,
     coverImage:
@@ -396,6 +424,7 @@ const books = [
     category: "philosophical",
     title: "Atomic Habits",
     author: "James Clear",
+    rating: 4.8,
     launchDate: "2018-10-16",
     pages: 320,
     coverImage:
@@ -407,18 +436,19 @@ const books = [
     category: "history",
     title: "Rich Dad Poor Dad",
     author: "Robert Kiyosaki",
+    rating: 4.2,
     launchDate: "1997-01-01",
     pages: 336,
     coverImage:
       "https://upload.wikimedia.org/wikipedia/en/b/b9/Rich_Dad_Poor_Dad.jpg",
     description: "A personal finance book by Robert Kiyosaki.",
   },
-
   {
     id: 36,
     category: "philosophical",
     title: "Think and Grow Rich",
     author: "Napoleon Hill",
+    rating: 4.3,
     launchDate: "1937-01-01",
     pages: 238,
     coverImage:
@@ -430,6 +460,7 @@ const books = [
     category: "philosophical",
     title: "The Power of Habit",
     author: "Charles Duhigg",
+    rating: 4.4,
     launchDate: "2012-02-28",
     pages: 371,
     coverImage:
@@ -441,6 +472,7 @@ const books = [
     category: "philosophical",
     title: "The Psychology of Money",
     author: "Morgan Housel",
+    rating: 4.6,
     launchDate: "2020-09-08",
     pages: 256,
     coverImage:
@@ -452,6 +484,7 @@ const books = [
     category: "philosophical",
     title: "Ikigai",
     author: "Héctor García",
+    rating: 4.1,
     launchDate: "2016-01-01",
     pages: 208,
     coverImage:
@@ -463,18 +496,19 @@ const books = [
     category: "philosophical",
     title: "The Subtle Art of Not Giving a F*ck",
     author: "Mark Manson",
+    rating: 4.0,
     launchDate: "2016-09-13",
     pages: 224,
     coverImage:
       "https://upload.wikimedia.org/wikipedia/en/2/25/The_Subtle_Art_of_Not_Giving_a_Fuck.png",
     description: "Mark Manson’s counterintuitive approach to life values.",
   },
-
   {
     id: 41,
     category: "philosophical",
     title: "The Old Man and the Sea",
     author: "Ernest Hemingway",
+    rating: 4.5,
     launchDate: "1952-09-01",
     pages: 127,
     coverImage:
@@ -486,6 +520,7 @@ const books = [
     category: "philosophical",
     title: "The Picture of Dorian Gray",
     author: "Oscar Wilde",
+    rating: 4.3,
     launchDate: "1890-06-20",
     pages: 254,
     coverImage:
@@ -497,6 +532,7 @@ const books = [
     category: "philosophical",
     title: "The Brothers Karamazov",
     author: "Fyodor Dostoevsky",
+    rating: 4.8,
     launchDate: "1880-01-01",
     pages: 824,
     coverImage:
@@ -508,6 +544,7 @@ const books = [
     category: "fantasy",
     title: "The Chronicles of Narnia",
     author: "C. S. Lewis",
+    rating: 4.7,
     launchDate: "1950-10-16",
     pages: 767,
     coverImage:
@@ -519,18 +556,19 @@ const books = [
     category: "fantasy",
     title: "Journey to the Center of the Earth",
     author: "Jules Verne",
+    rating: 4.2,
     launchDate: "1864-11-25",
     pages: 183,
     coverImage:
       "https://upload.wikimedia.org/wikipedia/commons/2/2f/Journey_to_the_Center_of_the_Earth_1874.jpg",
     description: "Jules Verne’s adventure exploring Earth’s interior.",
   },
-
   {
     id: 46,
     category: "sci-fi",
     title: "The Time Machine",
     author: "H. G. Wells",
+    rating: 4.1,
     launchDate: "1895-05-07",
     pages: 118,
     coverImage:
@@ -542,6 +580,7 @@ const books = [
     category: "history",
     title: "Anna Karenina",
     author: "Leo Tolstoy",
+    rating: 4.7,
     launchDate: "1877-01-01",
     pages: 864,
     coverImage:
@@ -553,6 +592,7 @@ const books = [
     category: "history",
     title: "The Communist Manifesto",
     author: "Karl Marx & Friedrich Engels",
+    rating: 4.0,
     launchDate: "1848-02-21",
     pages: 80,
     coverImage:
