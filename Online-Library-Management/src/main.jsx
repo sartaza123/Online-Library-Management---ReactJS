@@ -8,6 +8,8 @@ import BrowseBook from "./Components/BrowseBook.jsx";
 import AddBook from "./Components/AddBook.jsx";
 import Home from "./Components/Home.jsx";
 import BookDetails from "./Components/BookDetails.jsx";
+import { Provider } from "react-redux";
+import appStore from "./Utils/appStore";
 
 const appRouter = createBrowserRouter([
   {
@@ -40,7 +42,9 @@ const appRouter = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={appRouter} />
-  </StrictMode>,
+  <Provider store={appStore}>
+    <StrictMode>
+      <RouterProvider router={appRouter} />
+    </StrictMode>
+  </Provider>,
 );

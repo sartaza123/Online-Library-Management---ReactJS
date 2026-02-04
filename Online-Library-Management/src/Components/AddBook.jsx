@@ -1,6 +1,11 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addCard } from "../Utils/cardsSlice";
+import { useNavigate } from "react-router-dom";
 
 function AddBook() {
+  const dispatch = useDispatch();
+
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
     title: "",
@@ -21,6 +26,8 @@ function AddBook() {
       [name]: value,
     }));
   }
+
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -44,7 +51,13 @@ function AddBook() {
     }
 
     setError("");
-    console.log(formData);
+    dispatch(
+      addCard({
+        ...formData,
+        id: Date.now(),
+      }),
+    );
+    navigate("/browse");
   }
 
   return (
@@ -61,6 +74,7 @@ function AddBook() {
             <input
               type="text"
               name="title"
+              placeholder="Title"
               value={formData.title}
               onChange={handleChange}
               className="w-full border rounded-md px-3 py-2"
@@ -73,6 +87,7 @@ function AddBook() {
             <input
               type="text"
               name="author"
+              placeholder="Author"
               value={formData.author}
               onChange={handleChange}
               className="w-full border rounded-md px-3 py-2"
@@ -103,6 +118,7 @@ function AddBook() {
             <input
               type="number"
               name="rating"
+              placeholder="1-5"
               value={formData.rating}
               onChange={handleChange}
               className="w-full border rounded-md px-3 py-2"
@@ -127,6 +143,7 @@ function AddBook() {
             <input
               type="number"
               name="pages"
+              placeholder="No. of Pages"
               value={formData.pages}
               onChange={handleChange}
               className="w-full border rounded-md px-3 py-2"
@@ -139,6 +156,7 @@ function AddBook() {
             <input
               type="text"
               name="coverImage"
+              placeholder="https://coverImage.com"
               value={formData.coverImage}
               onChange={handleChange}
               className="w-full border rounded-md px-3 py-2"
@@ -151,6 +169,7 @@ function AddBook() {
             <textarea
               rows="4"
               name="description"
+              placeholder="description"
               value={formData.description}
               onChange={handleChange}
               className="w-full border rounded-md px-3 py-2"

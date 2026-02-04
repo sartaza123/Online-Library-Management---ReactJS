@@ -1,12 +1,17 @@
 import { useParams, useNavigate } from "react-router-dom";
-import books from "../Utils/data";
+import { useSelector } from "react-redux";
+import staticBooks from "../Utils/data";
 
 function BookDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const ID = Number(id);
 
-  const book = books.find((b) => b.id === ID);
+  const reduxBooks = useSelector((state) => state.card.cards);
+
+  // merge static + redux books
+  const allBooks = [...reduxBooks, ...staticBooks];
+
+  const book = allBooks.find((b) => String(b.id) === id);
 
   if (!book) {
     return (

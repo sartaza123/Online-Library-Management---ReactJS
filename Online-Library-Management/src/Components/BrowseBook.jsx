@@ -3,6 +3,7 @@ import books from "../Utils/data";
 import Category from "./Category";
 import BookList from "./BookList";
 import { useState } from "react";
+import RecentlyAdded from "./RecentlyAdded";
 
 function BrowseBook() {
   const { category } = useParams();
@@ -21,6 +22,7 @@ function BrowseBook() {
   return (
     <div className="mt-24">
       <Category searchText={searchText} setSearchText={setSearchText} />
+      <RecentlyAdded />
       <BookList books={filteredBooks} />
     </div>
   );
