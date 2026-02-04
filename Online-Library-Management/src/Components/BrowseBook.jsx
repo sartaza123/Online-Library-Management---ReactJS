@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import books from "../Utils/data";
 import Category from "./Category";
 import BookList from "./BookList";
-import { useState } from "react";
 import RecentlyAdded from "./RecentlyAdded";
 
 function BrowseBook() {
@@ -19,12 +19,18 @@ function BrowseBook() {
 
     return matchCategory && matchSearch;
   });
+
   return (
     <div className="mt-24">
       <Category searchText={searchText} setSearchText={setSearchText} />
-      <RecentlyAdded />
+
+      {/* ✅ Redux books */}
+      <RecentlyAdded searchText={searchText} />
+
+      {/* ✅ Static books */}
       <BookList books={filteredBooks} />
     </div>
   );
 }
+
 export default BrowseBook;

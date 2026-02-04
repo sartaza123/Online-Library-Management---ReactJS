@@ -2,15 +2,21 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import BookCard from "./BookCard";
 
-function RecentlyAdded() {
-  const { category } = useParams(); // <-- URL category
+function RecentlyAdded({ searchText = "" }) {
+  const { category } = useParams();
   const cardsData = useSelector((state) => state.card.cards);
 
   if (!cardsData || cardsData.length === 0) return null;
 
   const filteredBooks = cardsData.filter((book) => {
-    if (!category || category === "all") return true;
-    return book.category === category;
+    const matchCategory =
+      !category || category === "all" || book.category === category;
+
+    const matchSearch =
+      book.title.toLowerCase().includes(searchText.toLowerCase()) ||
+      book.author.toLowerCase().includes(searchText.toLowerCase());
+
+    return matchCategory && matchSearch;
   });
 
   if (filteredBooks.length === 0) return null;
