@@ -1,16 +1,80 @@
-# React + Vite
+# Online Library Management System (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Online Library Management System built using **ReactJS**. This project demonstrates the use of React components, state management, routing, and basic UI logic to simulate a library system where users can browse and search books.
 
-Currently, two official plugins are available:
+This project is created for academic submission and follows proper GitHub practices including meaningful commits, clean structure, and clear documentation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Display list of books
+- Search books by title or category
+- Navigation between pages using React Router
+- Modular and reusable React components
+- Simple and responsive UI
 
-## Expanding the ESLint configuration
+> Note: This is a **frontend-only project**. No backend or database is used.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- ReactJS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- npm
+- Redux
+- React Router DOM
+
+---
+
+## Project Structure
+
+Online-Library-Management---ReactJS/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components
+│ ├── data/ # Static book data
+│ ├── App.js # Root component
+│ ├── index.js # Entry point
+│ └── styles/ # CSS files
+├── .gitignore
+├── package.json
+└── README.md
+
+---
+
+## Step to Run the Application
+
+Follow the steps below to run the project locally:
+
+### Clone the Repository
+
+git clone https://github.com/sartaza123/Online-Library-Management---ReactJS.git
+
+### create a directory using this command
+
+cd Online-Library-Management---ReactJS
+
+### run
+
+npm install
+
+### run
+
+npm run dev
+
+### open
+
+http://localhost:3000
+
+👨‍💻 Author
+
+Md Sartaz Ansari
+ReactJS Developer & Student
+
+GitHub: https://github.com/sartaza123
